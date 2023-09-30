@@ -188,6 +188,7 @@ footer {
     padding-bottom: 1em;
 }
 footer p {
+    margin-top: 0.5em;
     margin-bottom: 0.5em;
 }
 footer nav a:hover { text-decoration: none; }
