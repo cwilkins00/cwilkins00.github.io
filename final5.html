@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<!-- Christopher Wilkins - 12/07/21 -->
+<!--final5.html - styles/styles.css-->
+<html lang="en">
+<head>
+    <title>World Wide Web - Contact</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../styles/styles.css" rel="stylesheet" media="screen">
+    <link href="../styles/print.css" rel="stylesheet" media="print">
+    <link href="../images/favicon.ico" rel="icon" type="image/x-icon">
+    <style>
+        /* forms */
+        form {
+            max-width: 600px;
+            margin: auto;
+        }
+        fieldset{
+            display: flex;
+            flex-flow: column nowrap;
+            margin: 1em;
+            background-color: #EAEDED;
+            border: 1px solid #131921;
+        }
+        input, select, textarea {
+            margin-bottom: 0.5em;
+        }
+        legend {
+            font-weight: bold;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            margin: auto;
+        }
+        label {
+            font-weight: bold;
+            font-size: 90%;
+            padding-bottom: 0.2em;
+        }
+        input[type="submit"] {
+
+            width: 125px;
+            height: 50px;
+            margin: 0.5em;
+        }
+        input[type="reset"] {
+
+            width: 125px;
+            height: 50px;
+            margin: 0.5em;
+        }
+        /* contact img style */
+        #contact {
+            text-align: center;
+            margin-top: 1em;
+        }
+
+        /* submit & reset form div */
+        #formsubmit {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+    <header id="top">
+        <img src="../images/logo.png" alt="World Wide Web">
+        <h1><a href="final1.html">World Wide Web</a></h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="final1.html">Home</a></li>
+            <li><a href="final2.html">Learn More</a></li>
+            <li><a href="final3.html">Course</a></li>
+            <li><a href="final4.html">Credits</a></li>
+            <li id="navhighlight"><a href="final5.html">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <h2>Contact</h2>
+            <div id="contact">
+                <img src="../images/contact.png" alt="Contact Us">
+            </div>
+            <form method="post" action="mailto:cwilki12@stumail.jccc.edu">
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <label for="formFirst">First Name*</label>
+                    <input type="text" name="formFirst" id="formFirst" required placeholder="First name">
+                    <label for="formLast">Last Name*</label>
+                    <input type="text" name="formLast" id="formLast" required placeholder="Last name">
+                    <label for="formEmail">Email*</label>
+                    <input type="email" name="formEmail" id="formEmail" required placeholder="Email@domain.com">
+                    <label for="formPhone">Phone</label>
+                    <input type="tel" name="formPhone" id="formPhone" maxlength="10" placeholder="(555)555-5555">
+                    <label>Birth Date</label>
+                    <span>
+                        <label for="formBirthDateMonth" hidden>Month</label>
+                        <select name="formBirthDateMonth" id="formBirthDateMonth">
+                            <option value="">Select</option>
+                            <option value="January">January</option>
+                            <option value="February">February</option>
+                            <option value="March">March</option>
+                            <option value="April">April</option>
+                            <option value="May">May</option>
+                            <option value="June">June</option>
+                            <option value="July">July</option>
+                            <option value="August">August</option>
+                            <option value="September">September</option>
+                            <option value="October">October</option>
+                            <option value="November">November</option>
+                            <option value="December">December</option>
+                        </select>
+                        <label for="formBirthDateDay" hidden>Day</label>
+                        <input type="number" name="formBirthDateDay" id="formBirthDateDay" min="1" max="31" placeholder="Day">
+                        <label for="formBirthDateYear" hidden>Year</label>
+                        <input type="number" name="formBirthDateYear" id="formBirthDateYear" min="1900" max="2021" placeholder="Year">
+                    </span>
+                    <label>Gender</label>
+                    <span>
+                        <label for="formGenderM" hidden>Male</label>
+                        <input type="radio" name="formGender" id="formGenderM" value="M"> Male
+                        <label for="formGenderF" hidden>Female</label>
+                        <input type="radio" name="formGender" id="formGenderF" value="F"> Female
+                        <label for="formGenderO" hidden>Other</label>
+                        <input type="radio" name="formGender" id="formGenderO" value="O"> Other
+                    </span>
+                </fieldset>
+                <fieldset>
+                    <legend>Address Information</legend>
+                    <label for="formAddress">Address</label>
+                    <input type="text" name="formAddress" id="formAddress" placeholder="Street address">
+                    <label for="formCity">City</label>
+                    <input type="text" name="formCity" id="formCity" placeholder="City or town">
+                    <label for="formState">State</label>
+                    <span>
+                    <select name="formState" id="formState">
+                        <option value="">Select</option>
+                        <option value="Alabama">Alabama</option>
+                        <option value="Alaska">Alaska</option>
+                        <option value="Arizona">Arizona</option>
+                        <option value="Arkansas">Arkansas</option>
+                        <option value="California">California</option>
+                        <option value="Colorado">Colorado</option>
+                        <option value="Connecticut">Connecticut</option>
+                        <option value="Delaware">Delaware</option>
+                        <option value="Florida">Florida</option>
+                        <option value="Georgia">Georgia</option>
+                        <option value="Hawaii">Hawaii</option>
+                        <option value="Idaho">Idaho</option>
+                        <option value="Illinois">Illinois</option>
+                        <option value="Indiana">Indiana</option>
+                        <option value="Iowa">Iowa</option>
+                        <option value="Kansas">Kansas</option>
+                        <option value="Kentucky">Kentucky</option>
+                        <option value="Louisiana">Louisiana</option>
+                        <option value="Maine">Maine</option>
+                        <option value="Maryland">Maryland</option>
+                        <option value="Massachusetts">Massachusetts</option>
+                        <option value="Michigan">Michigan</option>
+                        <option value="Minnesota">Minnesota</option>
+                        <option value="Mississippi">Mississippi</option>
+                        <option value="Missouri">Missouri</option>
+                        <option value="Montana">Montana</option>
+                        <option value="Nebraska">Nebraska</option>
+                        <option value="Nevada">Nevada</option>
+                        <option value="New Hampshire">New Hampshire</option>
+                        <option value="New Jersey">New Jersey</option>
+                        <option value="New Mexico">New Mexico</option>
+                        <option value="New York">New York</option>
+                        <option value="North Carolina">North Carolina</option>
+                        <option value="North Dakota">North Dakota</option>
+                        <option value="Ohio">Ohio</option>
+                        <option value="Oklahoma">Oklahoma</option>
+                        <option value="Oregon">Oregon</option>
+                        <option value="Pennsylvania">Pennsylvania</option>
+                        <option value="Rhone Island">Rhone Island</option>
+                        <option value="South Carolina">South Carolina</option>
+                        <option value="Tennessee">Tennessee</option>
+                        <option value="Texas">Texas</option>
+                        <option value="Utah">Utah</option>
+                        <option value="Vermont">Vermont</option>
+                        <option value="Virginia">Virginia</option>
+                        <option value="Washington">Washington</option>
+                        <option value="West Virginia">West Virginia</option>
+                        <option value="Wisconsin">Wisconsin</option>
+                        <option value="Wyoming">Wyoming</option>
+                    </select>
+                    </span>
+                    <label for="formZip">Zip Code</label>
+                    <input type="text" name="formZip" id="formZip" placeholder="12345" maxlength="5">
+                </fieldset>
+                <fieldset>
+                    <legend>Give Feedback</legend>
+                    <label for="formComment">Comments*</label>
+                    <textarea name="formComment" id="formComment" rows="8" cols="20" required placeholder="Leave us a comment!"></textarea>
+                    <label>Contact You</label>
+                    <span>
+                        <label for="Phone" hidden>Phone</label>
+                        <input type="checkbox" name="Phone" id="Phone" value="yes"> Phone
+                        <label for="Text" hidden>Text</label> 
+                        <input type="checkbox" name="Text" id="Text" value="yes"> Text 
+                        <label for="Email" hidden>Email</label>
+                        <input type="checkbox" name="Email" id="Email" value="yes"> Email 
+                        <label for="Letter" hidden>Letter</label>
+                        <input type="checkbox" name="Letter" id="Letter" value="yes"> Letter 
+                        <label for="Telegram" hidden>Telegram</label>
+                        <input type="checkbox" name="Telegram" id="Telegram" value="yes"> Telegram 
+                        <label for="Telepathy" hidden>Choose a Date</label>
+                        <input type="checkbox" name="Telepathy" id="Telepathy" value="yes"> Telepathy 
+                    </span>
+                    <label for="formDate">Choose a Date</label>
+                    <input type="date" name="formDate" id="formDate">
+                </fieldset>
+                <div id="formsubmit">
+                    <input type="submit" value="Submit"><input type="reset" value="Reset">
+                </div>
+            </form>
+        </section>
+    </main>
+    <div id="sidediv">
+        <aside>
+            <h3>Did you know?</h3>
+            <p>
+                Google Chrome is the most popular web browser with 64.92% of internet users choosing it. 
+                Safari follows, then Firefox, Samsung Internet, UC Browser, Opera, and finally Internet 
+                Explorer is currently used by 1.98% of internet users.<a href="../project/final4.html#15"><sup>[15]</sup></a>
+            </p>
+            <div class="imagegroup">
+                <img src="../images/chrome.png" alt="Hypertext Markup Language">
+                <img src="../images/safari.png" alt="Cascade Style Sheet">
+                <img src="../images/firefox.png" alt="Javascript">
+                <img src="../images/samsung.png" alt="File Transfer Protocol">
+                <img src="../images/ucbrowser.png" alt="Hypertext Transfer Protocol">
+                <img src="../images/opera.png" alt="C Sharp">
+                <img src="../images/explorer.png" alt="Secure Socket Layer">
+            </div>
+        </aside>
+        <aside>
+            <h3>Most Visited Websites</h3>
+            <p>Top websites ranking worldwide.<a href="../project/final4.html#16"><sup>[16]</sup></a></p>
+            <ol>
+                <li><img src="../images/googleicon.png" alt="Google">
+                    <a href="https://www.google.com/">google.com</a></li>
+                <li><img src="../images/youtubeicon.png" alt="Youtube">
+                    <a href="https://www.youtube.com/">youtube.com</a></li>
+                <li><img src="../images/facebookicon.png" alt="Facebook">
+                    <a href="https://www.facebook.com/">facebook.com</a></li>
+                <li><img src="../images/twittericon.png" alt="Twitter">
+                    <a href="https://www.twitter.com/">twitter.com</a></li>
+                <li><img src="../images/instagramicon.png" alt="Instagram">
+                    <a href="https://www.instagram.com/">instagram.com</a></li>
+                <li><img src="../images/baiduicon.png" alt="Baidu">
+                    <a href="https://www.baidu.com/">baidu.com</a></li>
+                <li><img src="../images/wikipediaicon.png" alt="Wikipedia">
+                    <a href="https://www.wikipedia.com/">wikipedia.com</a></li>
+                <li><img src="../images/yandexicon.png" alt="Yandex">
+                    <a href="https://www.yandex.com/">yandex.com</a></li>
+                <li><img src="../images/yahooicon.png" alt="Yahoo">
+                    <a href="https://www.yahoo.com/">yahoo.com</a></li>
+                <li><img src="../images/whatsappicon.png" alt="Whatsapp">
+                    <a href="https://www.whatsapp.com/">whatsapp.com</a></li>
+            </ol>
+        </aside>
+    </div>
+    <div id="backtop">
+        <a href="#top">Back to top</a>
+    </div>
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="final1.html">Home</a></li>
+                <li><a href="final2.html">Learn More</a></li>
+                <li><a href="final3.html">Course</a></li>
+                <li><a href="final4.html">Credits</a></li>
+                <li><a href="final5.html">Contact</a></li>
+            </ul>
+        </nav>
+        <p>Copyright &copy; 2022 Christopher L Wilkins</p>
+        <a href="mailto:cwilki12@stumail.jccc.edu">cwilki12@stumail.jccc.edu</a>
+    </footer>
+    </div> <!-- end of wrapper  -->
+</body>
+</html>

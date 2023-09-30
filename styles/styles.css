@@ -1,0 +1,391 @@
+/* Christopher Wilkins - 12/07/21 */
+/* styles/styles.css - final */
+
+/* default - body - wrapper */
+* {
+    box-sizing: border-box; /* includes content, padding and border */
+}
+body {
+    color: #131921;
+    background-color: #EAEDED;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+/* wrapper */
+/* no mobile styles */
+
+/* header */
+header {
+    color: #EAEDED;
+    background-color: #131921;
+    background-image: url(../images/banner.png);
+    background-repeat: no-repeat;
+    padding: 0.5em;
+    display: flex;
+    flex-flow: row nowrap;
+}
+header h1 {
+    padding-left: 0.5em;
+}
+header a         { text-decoration: none; }
+header a:link    { color: #EAEDED; }
+header a:visited { color: #EAEDED; }
+header a:hover   { color: #a52a2a; }
+
+/* nav and nav items */
+nav {
+    background-color: #232F3E;
+    font-size: 1em;
+    text-align: center;
+    font-weight: bold;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+nav li {
+    border-bottom: 1px solid #131921;
+    padding: 0.75em;
+}
+nav a         { text-decoration: none; }
+nav a:link    { color: #EAEDED; }
+nav a:visited { color: #EAEDED; }
+nav a:hover   { color: #a52a2a; }
+
+/* main */
+main {
+    background-color: #ffffff;
+    background-image: linear-gradient(to right, #EAEDED, #ffffff);
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    margin: 0.5em;
+    margin-bottom: 0;
+}
+main a { text-decoration: none; }
+main a:link    { color: #a52a2a; }
+main a:visited { color: #a52a2a; }
+main a:hover   { color: #a52a2a;
+                 text-decoration: underline; }
+
+/* headings */
+h1 {
+    font-family: Tahoma, Verdana, sans-serif;
+}
+h2, h3, h4 {
+    color: #37475A;
+    margin: 0;
+    padding: 0.25em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* text */
+ol, ul {
+    line-height: 1.25em;
+    overflow: auto;
+}
+
+/* image styles */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* sections */
+section {
+    padding: 1em;
+    overflow: auto;
+}
+section h2, h3, h4 {
+    background-color: #EAEDED;
+}
+
+/* aside */
+aside {
+    padding: 1em;
+    text-align: center;
+}
+aside ol {
+    line-height: 1.5em;
+    text-align: left;
+}
+aside a {
+    margin-left: 0.5em;
+}
+
+/* table */
+table {
+    border-collapse: collapse;
+    margin: auto;
+    margin-bottom: 1em;
+}
+td, th {
+    padding: 0.5em;
+    border: 1px solid #131921;
+    font-size: 75%;
+    text-align: center;
+}
+tr:first-of-type {
+    color: #EAEDED;
+    background-color: #37475A;
+}
+tr:nth-of-type(even) {
+    background-color: #EAEDED;
+}
+
+/* forms */
+/* also embedded on contact page */
+form {
+    max-width: 600px;
+    margin: auto;
+}
+fieldset{
+    display: flex;
+    flex-flow: column nowrap;
+    margin: 1em;
+    background-color: #EAEDED;
+    border: 1px solid #131921;
+}
+input, select, textarea {
+    margin-bottom: 0.5em;
+}
+legend {
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: auto;
+}
+label {
+    font-weight: bold;
+    font-size: 90%;
+    padding-bottom: 0.2em;
+}
+input[type="submit"] {
+
+    width: 125px;
+    height: 50px;
+    margin: 0.5em;
+}
+input[type="reset"] {
+
+    width: 125px;
+    height: 50px;
+    margin: 0.5em;
+}
+
+/* superscript for citation */
+sup {
+    font-size: 0.75em;
+    line-height: 0;
+}
+
+/* footer */
+footer {
+    color: #EAEDED;
+    background-color: #131921;
+    text-align: center;
+    font-size: 0.75em;
+    padding-bottom: 1em;
+}
+footer p {
+    margin-bottom: 0.5em;
+}
+footer nav a:hover { text-decoration: none; }
+footer a           { text-decoration: none; }
+footer a:link      { color: #EAEDED; }
+footer a:visited   { color: #EAEDED; }
+footer a:hover     { color: #a52a2a;
+                     text-decoration: underline; }
+                     
+/* classes and ids */
+/* nav current page style */
+#navhighlight {
+    background-color: #37475A;
+}
+
+/* ordered list styles for course page*/
+#course {
+    font-size: 90%;
+}
+#courselist {
+    list-style: upper-roman;
+    font-size: 90%;
+}
+#courselist ol li {
+    list-style: upper-alpha;
+}
+#courselist ol li ol li {
+    list-style: decimal;
+}
+
+/* side div outside main with asides inside */
+#sidediv {
+    display: flex;
+    flex-flow: column nowrap;
+    background-color: #ffffff;
+    background-image: linear-gradient(to left, #EAEDED, #ffffff, #EAEDED);
+    margin: 0.5em;
+    align-items: center;
+}
+#sidediv a { text-decoration: none; }
+#sidediv a:link    { color: #a52a2a; }
+#sidediv a:visited { color: #a52a2a; }
+#sidediv a:hover   { color: #a52a2a;
+                 text-decoration: underline; }
+
+/* table link */
+#tablelink {
+    text-align: center;
+    font-size: 90%;
+    margin: 0;
+    padding: 0.2em;
+}
+/* contact page img style */
+#contact {
+    text-align: center;
+    margin-top: 1em;
+}
+
+/* submit & reset form div */
+#formsubmit {
+    text-align: center;
+}
+
+/* credits page list styles */
+#credits ul{
+    list-style: none;
+    line-height: 1.5em;
+}
+#credits h3{
+    padding: 0.25em;
+}
+#credits ol {
+    list-style-position: inside;
+}
+
+/* back to top area */
+#backtop {
+    background-color: #ffffff;
+    background-image: linear-gradient(to left, #EAEDED, #ffffff, #EAEDED);
+    text-align: center;
+    margin-bottom: 0.5em;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    padding: 0.5em;
+}
+#backtop a { text-decoration: none; }
+#backtop a:link    { color: #a52a2a; }
+#backtop a:visited { color: #a52a2a; }
+#backtop a:hover   { color: #a52a2a;
+                     text-decoration: underline; }
+
+/* class styles for modifying individual elements */
+/* float images left or right */
+.floatright {
+    float: right;
+    max-width: 33%;
+    padding-left: 1em;
+}
+.floatleft {
+    float: left;
+    max-width: 33%;
+    padding-right: 1em;
+}
+
+/* span text styles */
+.spanbold {
+    font-weight: bold;
+    color: #37475A;
+}
+
+/* center text style */
+.centertext {
+    text-align: center;
+}
+
+/* center img style */
+.centerimg {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* flexbox images */
+.imagegroup {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin-top: 1em;
+}
+.imagegroup img {
+    padding: 0.2em;
+}
+
+/* tablet-sized screen styles */
+@media (min-width: 600px) {
+    nav ul {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: left;
+    }
+    nav li {
+        border-bottom: none;
+        padding-left: 2em;
+        padding-right: 2em;
+    }
+    nav li:hover {
+        background-color: #37475A;
+    }
+    footer nav ul {
+        justify-content: center;
+    }
+    footer nav li:hover {
+        background-color: #232F3E;
+    }
+    #navhighlight {
+        background-image: linear-gradient(to top, #EAEDED, #EAEDED, #37475A);
+    }
+    #navhighlight a:visited {
+        color: #131921;
+    }
+}
+/* laptop-sized screen styles */
+@media (min-width: 1024px) {
+    #wrapper {
+        margin: auto;
+        width: 80%;
+        border: 1px solid #131921;
+    }
+    /* if browser supports grid */
+    @supports (display: grid) {
+        
+        /* grid area names */
+        header { grid-area: header; }
+        nav    { grid-area: nav; }
+        main   { grid-area: main; }
+        footer { grid-area: footer; }
+        #sidediv  { grid-area: sidediv; }
+        #backtop { grid-area: backtop; }
+        
+        /* position on grid inside wrapper */
+        #wrapper {
+            display: grid;
+            grid-template:  "header header"
+                            "nav    nav"
+                            "main   sidediv"
+                            "backtop backtop"
+                            "footer footer"
+                            / 1fr 20%;
+        }
+
+        /* main styles full size */
+        main {
+            margin-right: 0;
+            margin-bottom: 0.5em;
+        }
+        /* side div style full size */
+        #sidediv {
+            background-image: linear-gradient(to left, #EAEDED, #ffffff);
+        }
+    }
+}
