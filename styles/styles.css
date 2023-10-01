@@ -189,7 +189,7 @@ footer {
 }
 footer p {
     padding-top: 0.5em;
-    padding-bottom: 0.5em;
+    padding-bottom: 0.25em;
 }
 footer nav a:hover { text-decoration: none; }
 footer a           { text-decoration: none; }
