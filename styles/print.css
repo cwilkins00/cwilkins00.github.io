@@ -189,8 +189,8 @@ footer {
     display: none;
 }
 footer p {
-    padding-top: 0.5em;
-    padding-bottom: 0.25em;
+    padding-top: 1em;
+    padding-bottom: 0.5em;
 }
 footer nav a:hover { text-decoration: none; }
 footer a           { text-decoration: none; }
